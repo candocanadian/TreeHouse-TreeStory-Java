@@ -1,7 +1,7 @@
 //Use command clear && javac TreeStory.java && java TreeStory
 import java.io.Console;
  
-public class TreeStory {
+public class Main {
     
     public static void main(String[] args) {
         Console console = System.console();
@@ -12,7 +12,7 @@ public class TreeStory {
     //Ask age. gtfo if under 13
       if (age < 13) {
        //Exit code
-        console.printf("Sorry you must be at least 13 to use this program.\n");
+        console.printf("Sorry you must be at least 13 you tiny faggot.\n");
         System.exit(0);
       }
       //Ask the questions & do while loop
@@ -24,7 +24,13 @@ String adjective = console.readLine("Enter an adjective:  ");
    noun = console.readLine("Enter a noun:  ");
         isInvalididWord = (noun.equalsIgnoreCase("dork") ||
                                    noun.equalsIgnoreCase("jerk") ||
-                                   noun.equalsIgnoreCase("nerd"));
+                                   noun.equalsIgnoreCase("nerd") ||
+                                   noun.equalsIgnoreCase("Loser") ||
+                                   noun.equalsIgnoreCase("tard") ||
+                                   noun.equalsIgnoreCase("Faggot") ||
+                                   noun.equalsIgnoreCase("gay") ||
+                                   noun.equalsIgnoreCase("nigger") ||
+                                   noun.equalsIgnoreCase("Hello"));
         if (isInvalididWord){
           console.printf("That language is not allowed. Try again. \n\n");
         }
@@ -32,10 +38,11 @@ String adjective = console.readLine("Enter an adjective:  ");
 String adverb = console.readLine("Enter an adverb:  ");
 String verb = console.readLine("Enter a verb ending with -ing:  ");
       //The story
-      console.printf("Your TreeStory: \n---------------------\n");
+      console.printf("Your TreeStory: \n-----------------------------------------------------------------------------------\n");
       console.printf("%s is a %s %s. ",name, adjective, noun);   
       console.printf("They are always %s %s. \n", adverb, verb); 
       
     }
     
 }
+
